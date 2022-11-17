@@ -1,10 +1,10 @@
 ## Team Members;
 
-**Parry**
-**Jawad**
-**Minjun**
-**Feiran**
-**Yihao**
+1. **Parry**
+2. **Jawad**
+3. **Minjun**
+4. **Feiran**
+5. **Yihao**
 
 
 
