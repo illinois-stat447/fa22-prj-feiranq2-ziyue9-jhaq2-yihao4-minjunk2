@@ -4,7 +4,7 @@
 **Jawad**
 **Minjun**
 **Feiran**
-**git Yihao**
+**Yihao**
 
 
 
@@ -27,7 +27,7 @@ Personally, I like the 'Something New', 'Transcription' and 'replication' option
 
 |       Task       | Duration est. | Start |  End  | Assigned To |
 |------------------|---------------|-------|-------|-------------|
-| Project Proposal |               |       |       |             |
+|                  |               |       |       |             |
 |                  |               |       |       |             |
 |                  |               |       |       |             |
 |                  |               |       |       |             |
