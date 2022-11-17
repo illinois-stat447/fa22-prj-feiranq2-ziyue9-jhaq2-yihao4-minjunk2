@@ -11,3 +11,16 @@ Personally, I like the 'Something New', 'Transcription' and 'replication' option
 | Feiran | yes        | yes        |            |
 | Yihao  |            | yes        | yes        |
 
+
+## Timeline of Work
+
+
+|       Task       | Duration est. | Start |  End  | Assigned To |
+|------------------|---------------|-------|-------|-------------|
+| Project Proposal |               |       |       |             |
+|                  |               |       |       |             |
+|                  |               |       |       |             |
+|                  |               |       |       |             |
+|                  |               |       |       |             |
+
+
