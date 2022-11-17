@@ -1,9 +1,13 @@
-## Team Members;
+## Team Members
 
 1. **Parry**
+
 2. **Jawad**
+
 3. **Minjun**
+
 4. **Feiran**
+
 5. **Yihao**
 
 
@@ -33,4 +37,4 @@ Personally, I like the 'Something New', 'Transcription' and 'replication' option
 |                  |               |       |       |             |
 |                  |               |       |       |             |
 
-
+Test commit
