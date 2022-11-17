@@ -10,3 +10,4 @@ Personally, I like the 'Something New', 'Transcription' and 'replication' option
 | Minjun | after 5pm  | yes        | yes        |
 | Feiran | yes        | yes        |            |
 | Yihao  |            | yes        | yes        |
+
