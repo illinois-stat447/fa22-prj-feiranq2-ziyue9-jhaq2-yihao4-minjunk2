@@ -38,3 +38,6 @@ Personally, I like the 'Something New', 'Transcription' and 'replication' option
 |                  |               |       |       |             |
 
 
+## Proposal
+
+We will focus on the [Global Terrorism Database](https://www.start.umd.edu/gtd/). We want to find relationships of attacks such as attacks by region, corrlation between features (we can find up to 70 features such as data, weapon type, attack type). First, we do data fetching and data cleaning. Next, we visualize and correlize the data to see if we can find some rules. Finally, we will try some models such as random forest to do prediction of attacks.(Who will be responsible or When and where is the next attack)
