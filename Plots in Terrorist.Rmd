@@ -137,7 +137,5 @@ ggplot(df_killed, aes(x = Group, y = total_killed_Wounded, fill = total_killed_W
   scale_x_discrete(name="Group")
 ```
 
-```{r}
-df
-```
+
 
