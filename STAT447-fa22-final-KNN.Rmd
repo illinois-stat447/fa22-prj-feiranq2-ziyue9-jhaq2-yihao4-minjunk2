@@ -31,7 +31,6 @@ str(raw_data)
 After analysis we pick 14 feature as shown below:
 
 ```{r}
-#selected = raw_data[,c('gname','country','success','suicide','attacktype1','targtype1','claimed','weaptype1','nkill','nwound','property','ransom'),]
 selected = raw_data[,c('gname','country','latitude','longitude','success','suicide','attacktype1','targtype1','claimed','weaptype1','nkill','nwound','property','ransom'),]
 ```
 
@@ -101,8 +100,29 @@ NROW(train_labels)
 
 Since $\sqrt{30263}\approx175$, we set K value of our model as 175.
 
+We can obtain results when we use all 14 features.
+
 ```{r}
 model = knn(train=train, test=test, cl=train_labels, k=175)
 ACC <- 100 * sum(test_labels == model)/NROW(test_labels)
 ACC
 ```
+
+If we remove specific location information like 'latitude' and 'longitude', we will have a worse result as below.
+
+```{r}
+selected1 = raw_data[,c('gname','country','success','suicide','attacktype1','targtype1','claimed','weaptype1','nkill','nwound','property','ransom'),]
+selected1 = selected1[gname%in%groups_name,,]
+selected1[is.na(selected1)] <- 0
+index = sample(1:nrow(selected1),size=nrow(selected1)*0.7,replace = FALSE)
+train_labels = selected1[index,gname]
+test_labels = selected1[-index,gname]
+selected1 <- as.data.frame(lapply(selected1[,2:NCOL(selected1)], normalize))
+train = selected1[index,]
+test = selected1[-index,]
+model = knn(train=train, test=test, cl=train_labels, k=175)
+ACC <- 100 * sum(test_labels == model)/NROW(test_labels)
+ACC
+```
+
+KNN performs not good in this prediction tasks. Actually, KNN predicts the target value by the similarities between instances and the similarity is measured by the Euclidean distance. However, about 80% of the features in the GTD dataset are categorical variables, in which distance cannot precisely reflect the in- formation. Thus KNN can only give us a good result when we introduce location information as features on this task.
