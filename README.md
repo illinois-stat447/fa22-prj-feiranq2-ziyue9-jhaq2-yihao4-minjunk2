@@ -1,3 +1,6 @@
+
+![Cover](https://github.com/illinois-stat447/fa22-prj-feiranq2-ziyue9-jhaq2-yihao4-minjunk2/blob/main/1.jpg)
+
 ## Our presentation
 
 Please check our presentation as the link below: 
