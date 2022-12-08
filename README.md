@@ -1,14 +1,15 @@
 ## Team Members
 
-1. **Parry**
+1. **Minjun Kim (minjunk2)**
 
-2. **Jawad**
+2. **Feiran Qin (feiranq2)**
 
-3. **Minjun**
+3. **Jawad Haq (jhaq2)**
 
-4. **Feiran**
+4. **Yihao Zhao (yihao4)** Builded the decision tree regression model, have ploted multiple barplots in different explanatory variables, have done projects' conclusion in both written report and presentation.
 
-5. **Yihao**
+5. **Ziyue Yang (ziyue9)**
+
 
 
 
