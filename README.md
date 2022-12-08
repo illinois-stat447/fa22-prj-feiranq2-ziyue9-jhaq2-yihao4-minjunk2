@@ -11,7 +11,7 @@ Please check our presentation as the link below:
 
 1. **Minjun Kim (minjunk2)** Built Random Forest model for predicting perpetrator and plotted line chart for attack count, have presented decision tree regression model and Random Forest models in the video.
 
-2. **Feiran Qin (feiranq2)**
+2. **Feiran Qin (feiranq2)** Built several figures for visualization, and wrote the visualization part in the written report.
 
 3. **Jawad Haq (jhaq2)**
 
