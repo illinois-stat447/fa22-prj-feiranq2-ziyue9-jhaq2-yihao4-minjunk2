@@ -8,7 +8,7 @@
 
 4. **Yihao Zhao (yihao4)** Building the Decision Tree regression model, and plotting multiple barplots in different explanatory variables, Writing the interpretation and explanation for Decision Tree model and project's conclusion in written report and presenting it in presentation.
 
-5. **Ziyue Yang (ziyue9)**
+5. **Ziyue Yang (ziyue9)** Built several KNN models on different features and examined the performance of the model under different settings. Edited the presentation video. Contirbuted to part of report and presented it in presentation.
 
 
 
