@@ -476,8 +476,7 @@ dim(raw_data)</code></pre>
 ##   [list output truncated]
 ##  - attr(*, &quot;.internal.selfref&quot;)=&lt;externalptr&gt;</code></pre>
 <p>After analysis we pick 14 feature as shown below:</p>
-<pre class="r"><code>#selected = raw_data[,c(&#39;gname&#39;,&#39;country&#39;,&#39;success&#39;,&#39;suicide&#39;,&#39;attacktype1&#39;,&#39;targtype1&#39;,&#39;claimed&#39;,&#39;weaptype1&#39;,&#39;nkill&#39;,&#39;nwound&#39;,&#39;property&#39;,&#39;ransom&#39;),]
-selected = raw_data[,c(&#39;gname&#39;,&#39;country&#39;,&#39;latitude&#39;,&#39;longitude&#39;,&#39;success&#39;,&#39;suicide&#39;,&#39;attacktype1&#39;,&#39;targtype1&#39;,&#39;claimed&#39;,&#39;weaptype1&#39;,&#39;nkill&#39;,&#39;nwound&#39;,&#39;property&#39;,&#39;ransom&#39;),]</code></pre>
+<pre class="r"><code>selected = raw_data[,c(&#39;gname&#39;,&#39;country&#39;,&#39;latitude&#39;,&#39;longitude&#39;,&#39;success&#39;,&#39;suicide&#39;,&#39;attacktype1&#39;,&#39;targtype1&#39;,&#39;claimed&#39;,&#39;weaptype1&#39;,&#39;nkill&#39;,&#39;nwound&#39;,&#39;property&#39;,&#39;ransom&#39;),]</code></pre>
 <p>Also, there are lots of terrorist groups, and most of them have few
 records. We believe activate groups can be great threats to the world.
 In this project, we find the most active 𝑘 terrorist groups by amount of
@@ -582,10 +581,33 @@ NROW(train_labels)</code></pre>
 <pre><code>## [1] 30263</code></pre>
 <p>Since <span class="math inline">\(\sqrt{30263}\approx175\)</span>, we
 set K value of our model as 175.</p>
+<p>We can obtain results when we use all 14 features.</p>
 <pre class="r"><code>model = knn(train=train, test=test, cl=train_labels, k=175)
 ACC &lt;- 100 * sum(test_labels == model)/NROW(test_labels)
 ACC</code></pre>
 <pre><code>## [1] 85.82993</code></pre>
+<p>If we remove specific location information like ‘latitude’ and
+‘longitude’, we will have a worse result as below.</p>
+<pre class="r"><code>selected1 = raw_data[,c(&#39;gname&#39;,&#39;country&#39;,&#39;success&#39;,&#39;suicide&#39;,&#39;attacktype1&#39;,&#39;targtype1&#39;,&#39;claimed&#39;,&#39;weaptype1&#39;,&#39;nkill&#39;,&#39;nwound&#39;,&#39;property&#39;,&#39;ransom&#39;),]
+selected1 = selected1[gname%in%groups_name,,]
+selected1[is.na(selected1)] &lt;- 0
+index = sample(1:nrow(selected1),size=nrow(selected1)*0.7,replace = FALSE)
+train_labels = selected1[index,gname]
+test_labels = selected1[-index,gname]
+selected1 &lt;- as.data.frame(lapply(selected1[,2:NCOL(selected1)], normalize))
+train = selected1[index,]
+test = selected1[-index,]
+model = knn(train=train, test=test, cl=train_labels, k=175)
+ACC &lt;- 100 * sum(test_labels == model)/NROW(test_labels)
+ACC</code></pre>
+<pre><code>## [1] 70.54969</code></pre>
+<p>KNN performs not good in this prediction tasks. Actually, KNN
+predicts the target value by the similarities between instances and the
+similarity is measured by the Euclidean distance. However, about 80% of
+the features in the GTD dataset are categorical variables, in which
+distance cannot precisely reflect the in- formation. Thus KNN can only
+give us a good result when we introduce location information as features
+on this task.</p>
 </div>
 </div>
 
