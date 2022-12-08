@@ -1,12 +1,12 @@
 ## Team Members
 
-1. **Minjun Kim (minjunk2)**
+1. **Minjun Kim (minjunk2)** Built Random Forest model for predicting perpetrator and plotted line chart for attack count, have presented decision tree regression model and Random Forest models in the video.
 
 2. **Feiran Qin (feiranq2)**
 
 3. **Jawad Haq (jhaq2)**
 
-4. **Yihao Zhao (yihao4)** Builded the decision tree regression model, have ploted multiple barplots in different explanatory variables, have done projects' conclusion in both written report and presentation. 
+4. **Yihao Zhao (yihao4)** Built the decision tree regression model, have plotted multiple bar plots in different explanatory variables, have done projects' conclusion in both written report and presentation. 
 
 5. **Ziyue Yang (ziyue9)**
 
