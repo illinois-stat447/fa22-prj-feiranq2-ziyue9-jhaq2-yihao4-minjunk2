@@ -13,7 +13,7 @@ Please check our presentation as the link below:
 
 2. **Feiran Qin (feiranq2)**
 
-3. **Jawad Haq (jhaq2)**
+3. **Jawad Haq (jhaq2)** Built Random Forest model for predicting type of attack and presented the introduction to our overall project and data used
 
 4. **Yihao Zhao (yihao4)** Building the Decision Tree regression model, and plotting multiple barplots in different explanatory variables, Writing the interpretation and explanation for Decision Tree model and project's conclusion in written report and presenting it in presentation.
 
