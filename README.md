@@ -6,7 +6,7 @@
 
 3. **Jawad Haq (jhaq2)**
 
-4. **Yihao Zhao (yihao4)** Builded the decision tree regression model, have ploted multiple barplots in different explanatory variables, have done projects' conclusion in both written report and presentation.
+4. **Yihao Zhao (yihao4)** Builded the decision tree regression model, have ploted multiple barplots in different explanatory variables, have done projects' conclusion in both written report and presentation. 
 
 5. **Ziyue Yang (ziyue9)**
 
