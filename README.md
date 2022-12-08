@@ -1,6 +1,6 @@
 ## Team Members
 
-1. **Minjun Kim (minjunk2)** Building the Random Forest model, and plotting multiple line charts and bar chats. Writing the interpretation and explanation for Random Forest model in written report and presenting Random Forest model and Decision Tree model in presentation.
+1. **Minjun Kim (minjunk2)** Built Random Forest model for predicting perpetrator and plotted line chart for attack count, have presented decision tree regression model and Random Forest models in the video.
 
 2. **Feiran Qin (feiranq2)**
 
