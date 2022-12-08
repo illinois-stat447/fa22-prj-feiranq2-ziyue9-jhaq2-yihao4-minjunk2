@@ -1,12 +1,12 @@
 ## Team Members
 
-1. **Minjun Kim (minjunk2)**
+1. **Minjun Kim (minjunk2)** Building the Random Forest model, and plotting multiple line charts and bar chats. Writing the interpretation and explanation for Random Forest model in written report and presenting Random Forest model and Decision Tree model in presentation.
 
 2. **Feiran Qin (feiranq2)**
 
 3. **Jawad Haq (jhaq2)**
 
-4. **Yihao Zhao (yihao4)** Builded the decision tree regression model, have ploted multiple barplots in different explanatory variables, have done projects' conclusion in both written report and presentation. 
+4. **Yihao Zhao (yihao4)** Building the Decision Tree regression model, and plotting multiple barplots in different explanatory variables, Writing the interpretation and explanation for Decision Tree model and project's conclusion in written report and presenting it in presentation.
 
 5. **Ziyue Yang (ziyue9)**
 
